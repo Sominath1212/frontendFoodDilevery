@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+background-color: rgb(9, 9, 9);
+
+color:gray;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Active{
+    border: 2px solid green;
+    
+}
+.banner{
+    background-image: url('assets/images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+background-size: cover;
+opacity: 0.7;
+}
