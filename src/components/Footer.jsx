@@ -13,7 +13,7 @@ function Footer() {
             <div className='flex text-white items-center justify-center space-x-10 '>
 
                 <div>
-                    <h1 style={{ fontFamily: "Montserrat" }} className='flex cursor-pointer items-center justify-center'><span className='text-green-500 font-bold text-3xl '>Food</span><span className='underline font-bold italic mx-1 '>store</span><span><ImSpoonKnife className='text-green-500' /></span></h1>
+                    <h1 style={{ fontFamily: "Montserrat" }} className='flex cursor-pointer items-center justify-center'><span className='text-[#FF6600] font-bold text-3xl '>Food</span><span className='underline font-bold italic mx-1 '>store</span><span><ImSpoonKnife className='text-[#FF6600]' /></span></h1>
 
                 </div>
                 <div className='sm:flex my-1 items-center'>
