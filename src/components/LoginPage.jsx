@@ -1,7 +1,9 @@
 import React from 'react'
 import { IoMailOpenSharp } from "react-icons/io5";
 import { FaRegEyeSlash } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 function LoginPage() {
+    const navigate = useNavigate()
     return (
         <div className='relative bg-white/40 sm:mx-56   h-[50vh] sm:h-[90vh]  top-10 left-0 right-0 rounded-lg border space-y-3   mx-1 flex flex-col items-center  justify-center backdrop-blur-lg  white/90' >
 
@@ -19,9 +21,14 @@ function LoginPage() {
                     </div>
                     <p className=' underline text-[4px] cursor-pointer relative left-46'>forgot password</p>
 
-                    <button className=' border rounded-lg px-3 my-3 w-full  bg-[#FF6600]'>Submit</button>
+                    <button className=' border rounded-lg px-3 my-3 w-full  bg-[#FF6600]'
+                        onClick={() => {
+                            toast.success('Login sucessefully!');
+                            
+                        }}
+                    >Submit</button>
                 </form>
-           </div>
+            </div>
         </div>
     )
 }

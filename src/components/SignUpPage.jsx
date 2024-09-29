@@ -13,22 +13,27 @@ function SignUpPage() {
 
                 <form className='flex flex-col text-center items-center  justify-center'>
                     <div className=' flex items-center bg-[#FF6600] rounded-lg border my-2'>
-                        <input type="text" placeholder='name' className="text-center  rounded-l-md outline-none border-none sm:py-1 sm:px-10 placeholder:text-[#FF6600] " />
+                        <input required  type="text" placeholder='name' className="text-center  rounded-l-md outline-none border-none sm:py-1 sm:px-10 placeholder:text-[#FF6600] " />
                         <RiFileUserLine className='m-1' />
                     </div>
                     <div className=' flex items-center bg-[#FF6600] rounded-lg border my-2'>
-                        <input type="email" placeholder='email' className="text-center  rounded-l-md outline-none sm:py-1 sm:px-10 border-none placeholder:text-[#FF6600] " />
+                        <input required  type="email" placeholder='email' className="text-center  rounded-l-md outline-none sm:py-1 sm:px-10 border-none placeholder:text-[#FF6600] " />
                         <IoMailOpenSharp className='m-1' />
                     </div>
                     <div className='flex items-center bg-[#FF6600] rounded-lg border mb-2'>
-                        <input type="password" placeholder='password' className="text-center  rounded-l-md outline-none border-none sm:py-1 sm:px-10 placeholder:text-[#FF6600] " />
+                        <input required  type="password" placeholder='password' className="text-center  rounded-l-md outline-none border-none sm:py-1 sm:px-10 placeholder:text-[#FF6600] " />
                         <FaRegEyeSlash className='m-1 ' />
                     </div>
                     <div className='flex items-center  w-[65%] my-2 text-sm'>
-                        <input type="checkbox" required /> <p className='text-sm relative top-2    '>I agree to <span className='text-[#FF6600] font-semibold'>Food store</span> 's Terms of Service, <span className='font-semibold'>Privacy Policy </span> and <span className='font-semibold'>Content Policies</span> </p>
+                        <input  type="checkbox" required /> <p className='text-sm relative top-2    '>I agree to <span className='text-[#FF6600] font-semibold'>Food store</span> 's Terms of Service, <span className='font-semibold'>Privacy Policy </span> and <span className='font-semibold'>Content Policies</span> </p>
                     </div>
 
-                    <button className=' border rounded-lg px-10 my-3 border-[#FF6600] bg-[#FF6600] hover:bg-transparent hover:border-2 '>Sign Up </button>
+                    <button className=' border rounded-lg px-10 my-3 border-[#FF6600] bg-[#FF6600] hover:bg-transparent hover:border-2 ' 
+                    onClick={()=>{
+                        toast.success('SignUp sucessefully!');
+                        
+                    }}
+                    >Sign Up </button>
                     <p className='text-sm '>If you already have account then <Link to='/loginpage'><span className='text-[#FF6600] underline cursor-pointer'>Login here</span></Link> </p>
                 </form>
           </div>
